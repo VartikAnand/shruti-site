@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Slider</title>
+  </head>
+  <body class="">
+    <!-- Banner Section -->
+    <section class="h-full w-auto mx-5 lg:mx-20 my-10">
+      <div
+        class="banner relative bg-cover bg-center h-64 md:h-96 lg:h-80 xl:h-96 2xl:h-96"
+        style="
+          background-image: url('./assets/lgscrrenabnner.jpeg');
+          border-radius: 40px;
+        "
+      >
+        <div
+          style="border-radius: 40px"
+          class="banner bg-black bg-opacity-50 bg-center h-64 md:h-96 lg:h-80 xl:h-96 2xl:h-96"
+        >
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-4 rounded-md w-full"
+          >
+            <h1 class="text-2xl md:text-2xl lg:text-5xl font-semibold mb-2">
+              The Stationery Shop Of dreams
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
+              For All Your Dreams on Paper
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PRODUCT Section -->
+    <!--PRODUCT Section Heading -->
+    <div class="mx-5 lg:mx-20">
+      <div class="ml-2 p-2">
+        <h1 class="text-3xl gradient-text font-bold text-orange-500 relative">
+          Trending Products
+          <span
+            style="
+              position: absolute;
+              width: 300px;
+              left: 0;
+              right: 0;
+              bottom: -5px;
+              height: 4px;
+              border-radius: 30px;
+              background: linear-gradient(to left, #ffa500, #ff4500);
+            "
+          ></span>
+        </h1>
+      </div>	
+    </div>
+
+    <!-- Trending products card -->
+    <div
+
+      style="overflow-x: auto; overflow-y: hidden"
+    >
+      <section class="h-full z-20 mx-5 lg:mx-20 my-10 flex gap-4 lg:gap-8">
+        <!-- Items 1 NOTEBOOKS -->
+        <div
+          class="container cursor-pointer"
+          style="--dynamic-bg-color: #a01501"
+        >
+          <div class="card" style="content: 'AS'; --dynamic-bg-color: #a01501">
+            <div class="imgBx">
+              <img src="./assets/groupNote.png" alt="textBook" />
+            </div>
+            <div class="contentBx">
+              <h2 class="text-3xl">Note Books</h2>
+              <div class="size text-white font-normal text-sm text-start">
+                <p>Dictionary description</p>
+              </div>
+              <div class="color mb-8 mt-5 text-lg font-medium">
+                <h3>Price: $50</h3>
+              </div>
+              <a class="text-base mr-2" href="#">Buy Now</a>
+              <a class="text-base" href="#">View Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Items 2 pens -->
+        <div class="container" style="--dynamic-bg-color: #cdceca">
+          <div class="card" style="content: 'AS'; --dynamic-bg-color: #cdceca">
+            <div class="imgBx">
+              <img src="./assets/pens.png" alt="textBook" />
+            </div>
+            <div class="contentBx">
+              <h2 class="text-3xl">Pens</h2>
+              <div class="size text-white font-normal text-sm text-start">
+                <p>Pens Description</p>
+              </div>
+              <div class="color mb-8 mt-5 text-lg font-medium">
+                <h3>Price: $10</h3>
+              </div>
+              <a class="text-base mr-2" href="#">Buy Now</a>
+              <a class="text-base" href="#">View Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Items 3 pencil  set-->
+        <div
+          class="container cursor-pointer"
+          style="--dynamic-bg-color: #2b1d81"
+        >
+          <div class="card" style="content: 'AS'; --dynamic-bg-color: #2b1d81">
+            <div class="imgBx">
+              <img src="./assets/pencil.png" height="150px" alt="textBook" />
+            </div>
+            <div class="contentBx">
+              <h2 class="text-3xl">Pencils</h2>
+              <div class="size text-white font-normal text-sm text-start">
+                <p>Pencils description</p>
+              </div>
+              <div class="color mb-8 mt-5 text-lg font-medium">
+                <h3>Price: $50</h3>
+              </div>
+              <a class="text-base mr-2" href="#">Buy Now</a>
+              <a class="text-base" href="#">View Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Items 4 pensil -->
+        <div
+          class="container cursor-pointer"
+          style="--dynamic-bg-color: #eeedeb"
+        >
+          <div class="card" style="content: 'AS'; --dynamic-bg-color: #eeedeb">
+            <div class="imgBx">
+              <img src="./assets/pensets.png" height="150px" alt="textBook" />
+            </div>
+            <div class="contentBx">
+              <h2 class="text-3xl">Pencils</h2>
+              <div class="size text-white font-normal text-sm text-start">
+                <p>Pencils description</p>
+              </div>
+              <div class="color mb-8 mt-5 text-lg font-medium">
+                <h3>Price: $50</h3>
+              </div>
+              <a class="text-base mr-2" href="#">Buy Now</a>
+              <a class="text-base" href="#">View Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Category  -->
+    <!-- Category card Heading -->
+
+    <div class="mx-5 lg:mx-20">
+      <div class="ml-2 p-2">
+        <h1 class="text-3xl gradient-text font-bold text-orange-500 relative">
+          Category
+          <span
+            style="
+              position: absolute;
+              width: 150px;
+              left: 0;
+              right: 0;
+              bottom: -5px;
+              height: 4px;
+              border-radius: 30px;
+              background: linear-gradient(to left, #ffa500, #ff4500);
+            "
+          ></span>
+        </h1>
+      </div>
+    </div>
+    <!-- Category card -->
+
+    <section class="h-full w-auto mx-5 lg:mx-20 my-10">
+      <div class="grid grid-cols-4 lg:grid-cols-8 gap-4 items-center">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/pens.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Pens & Pencils</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/diary.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Diary</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/groupNote.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Note Books</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/notepads.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Note Pads</p>
+        </div>
+        <!-- Card 5-->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="./assets/stickyNotes.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">StickyNotes</p>
+        </div>
+        <!-- Card 6 -->
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/MEMO.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Memo Block</p>
+        </div>
+        <!-- Card  7-->
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/Free-Pencil-Eraser-Mockup-PSD-removebg-preview.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Eraser</p>
+        </div>
+        <!-- Card 8 -->
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/sharpener-mockup-dark-removebg-preview.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Sharpener</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="h-full w-auto my-10">
+      <div
+        class="lg:mx-24 grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-20 gap-4 my-0"
+      >
+        <!-- First Card -->
+
+        <div class="w-full h-44">
+          <div
+            class="relative overflow-hidden cursor-pointer mx-5 h-full p-0 m-0 rounded-2xl"
+          >
+            <div
+              class="absolute top-0 h-1/2 w-full bg-yellow-400 bg-opacity-90"
+            ></div>
+            <div
+              class="absolute bottom-0 h-1/2 w-full bg-blue-400 bg-opacity-90"
+            ></div>
+            <div class="absolute top-0 right-0">
+              <img
+                src="./assets/penCollections.png"
+                alt="sk"
+                class="w-48 h-40"
+              />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">Pen Collections</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Take for infinite imaginations
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="w-full h-44">
+          <div
+            class="relative border-2 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-in mx-5 h-full p-0 m-0 rounded-2xl flex items-center justify-center"
+          >
+            <div class="absolute top-0 h-1/2 w-full bg-blue-300"></div>
+            <div class="absolute bottom-0 h-1/2 w-full bg-blue-900"></div>
+            <div class="absolute top-0 right-0">
+              <img
+                src="./assets/notebook-collections.png"
+                alt="sk"
+                class="w-48 h-40"
+              />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">NoteBooks & More</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Capturing Ideas, One Page at a Time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Essentials -->
+    <div class="mx-5 lg:mx-20">
+      <div class="ml-2 p-2 pl-4">
+        <h1 class="text-3xl gradient-text font-bold text-orange-500 relative">
+          Office Essentials
+          <span
+            style="
+              position: absolute;
+              width: 280px;
+              left: 0;
+              right: 0;
+              bottom: -5px;
+              height: 4px;
+              border-radius: 30px;
+              background: linear-gradient(to left, #ffa500, #ff4500);
+            "
+          ></span>
+        </h1>
+      </div>
+    </div>
+    <!-- Office Essentials Category card list -->
+    <div class="h-full w-auto mx-5 lg:mx-20 my-10">
+      <div class="grid grid-cols-4 lg:grid-cols-8 gap-4 items-center">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="./assets/sizors.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Scissor</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/calculator.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Calculator</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/fiels.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Files</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/notepads.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Note Pads</p>
+        </div>
+        <!-- Card 5-->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/stickyNotes.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">StickyNotes</p>
+        </div>
+        <!-- Card 6 -->
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/puncher.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Puncher</p>
+        </div>
+        <!-- Card  7-->
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/Free-Pencil-Eraser-Mockup-PSD-removebg-preview.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Eraser</p>
+        </div>
+        <!-- Card 8 -->
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img src="/assets/tape.png" class="w-full h-full overflow-hidden" />
+          </div>
+          <p class="font-semibold">Tape Dispenser</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Office collections  -->
+    <section class="h-full w-auto my-10">
+      <div
+        class="lg:mx-24 grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-8 gap-4 my-0"
+      >
+        <!-- First Card -->
+        <div class="w-full h-44">
+          <div
+            class="relative overflow-hidden cursor-pointer mx-5 h-full p-0 m-0 rounded-2xl"
+          >
+            <div
+              class="absolute top-0 h-1/2 w-full bg-gray-400 bg-opacity-90"
+            ></div>
+            <div
+              class="absolute bottom-0 h-1/2 w-full bg-red-300 bg-opacity-90"
+            ></div>
+            <div class="absolute top-0 right-0">
+              <img
+                src="./assets/office-orgainizer.png"
+                alt="sk"
+                class="w-48 h-40"
+              />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">Organizers</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Dash zen decoded
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="w-full h-44">
+          <div
+            class="relative border-2 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-in mx-5 h-full p-0 m-0 rounded-2xl flex items-center justify-center"
+          >
+            <div class="absolute top-0 h-1/2 w-full bg-green-900"></div>
+            <div class="absolute bottom-0 h-1/2 w-full bg-gray-700"></div>
+            <div class="absolute top-0 right-0">
+              <img
+                src="./assets/filesandfolder.png"
+                alt="sk"
+                class="w-48 h-40"
+              />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">File's & Folder's</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Organizing Thoughts
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="w-full h-44">
+          <div
+            class="relative overflow-hidden cursor-pointer mx-5 h-full p-0 m-0 rounded-2xl"
+          >
+            <div
+              class="absolute top-0 h-1/2 w-full bg-yellow-400 bg-opacity-90"
+            ></div>
+            <div
+              class="absolute bottom-0 h-1/2 w-full bg-pink-500 bg-opacity-90"
+            ></div>
+            <div class="absolute top-0 right-0">
+              <img src="./assets/staplers.png" alt="sk" class="w-48 h-40" />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">Staplers</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Binding Your Thoughts
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Card -->
+        <div class="w-full h-44">
+          <div
+            class="relative border-2 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-in mx-5 h-full p-0 m-0 rounded-2xl flex items-center justify-center"
+          >
+            <div class="absolute top-0 h-1/2 w-full bg-purple-300"></div>
+            <div class="absolute bottom-0 h-1/2 w-full bg-purple-900"></div>
+            <div class="absolute top-0 right-0">
+              <img src="./assets/paperclips.png" alt="sk" class="w-48 h-40" />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">PaperClips</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Keeping It Together
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Art supplies -->
+    <div class="mx-5 lg:mx-20">
+      <div class="ml-2 p-2 pl-4">
+        <h1 class="text-3xl gradient-text font-bold text-orange-500 relative">
+          Art Supplies
+          <span
+            style="
+              position: absolute;
+              width: 200px;
+              left: 0;
+              right: 0;
+              bottom: -5px;
+              height: 4px;
+              border-radius: 30px;
+              background: linear-gradient(to left, #ffa500, #ff4500);
+            "
+          ></span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Art supplies Category card list -->
+    <div class="h-full w-auto mx-5 lg:mx-16 my-10">
+      <div class="grid grid-cols-4 lg:grid-cols-8 gap-4 items-center">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="./assets/paints.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Paints</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="./assets/artpencils.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Art Pencils</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="./assets/brushpens.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Brush Pens</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="./assets/paints.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Paints</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-300 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-inmx-5 h-20 w-20 p-0 m-0 rounded-full flex items-center justify-center"
+          >
+            <img
+              src="/assets/artpencils.png"
+              alt="CA"
+              class="w-full h-full overflow-hidden"
+            />
+          </div>
+          <p class="font-semibold">Art Pencils</p>
+        </div>
+      </div>
+    </div>
+    <!-- Art supplies collections -->
+    <section class="h-full w-auto my-10">
+      <div
+        class="lg:mx-24 grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-20 gap-4 my-0"
+      >
+        <!-- First Card -->
+
+        <div class="w-full h-44">
+          <div
+            class="relative overflow-hidden cursor-pointer mx-5 h-full p-0 m-0 rounded-2xl"
+          >
+            <div
+              class="absolute top-0 h-1/2 w-full bg-red-700 bg-opacity-90"
+            ></div>
+            <div
+              class="absolute bottom-0 h-1/2 w-full bg-black bg-opacity-90"
+            ></div>
+            <div class="absolute top-0 right-0">
+              <img src="./assets/brushsets.png" alt="sk" class="w-48 h-40" />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">Brush Collections</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Take for infinite imaginations
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="w-full h-44">
+          <div
+            class="relative border-2 hover:bg-gray-100 shadow-inner overflow-hidden shadow-gray-800 cursor-pointer transition duration-300 ease-in-out hover:ease-in mx-5 h-full p-0 m-0 rounded-2xl flex items-center justify-center"
+          >
+            <div class="absolute top-0 h-1/2 w-full bg-green-500"></div>
+            <div class="absolute bottom-0 h-1/2 w-full bg-yellow-400"></div>
+            <div class="absolute top-0 right-0">
+              <img src="./assets/paintColorSet.png" alt="sk" class="w-48 h-40" />
+            </div>
+            <div class="absolute bottom-12 left-5">
+              <h1 class="text-black text-3xl font-bold">Colour Set</h1>
+              <p
+                class="text-white text-3xl p-0 m-0 pt-2 font-normal handwritten-front"
+              >
+                Capturing Ideas and make it Colorful,
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Greeting section -->
+
+    <section class="h-full w-auto my-10">
+      <div
+        class="lg:mx-24 grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-20 gap-4 my-0"
+      >
+        <!-- Whats new -->
+
+        <div class="w-full h-44">
+          <div
+            class="relative overflow-hidden cursor-pointer mx-5 h-full p-0 m-0 rounded-2xl"
+          >
+            <div
+              class="absolute top-0 h-full w-full bg-black bg-opacity-90"
+            ></div>
+            <div
+              class="absolute top-7 -left-96 h-4/6 w-full rounded-r-full bg-gradient-to-tr from-pink-500 via-pink-600 to-pink-700 bg-opacity-90"
+            ></div>
+
+            <div class="relative flex h-full justify-center items-center">
+              <div
+                class="border-2 p-2 px-20 rounded-full shadow-lg bg-white shadow-white"
+              >
+                <h1 class="text-2xl font-semibold">
+                  What's
+                  <span
+                    class="handwritten-front text-3xl text-pink-500 font-medium"
+                    >New</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Fav -->
+        <div class="w-full h-44">
+          <div
+            class="relative overflow-hidden cursor-pointer mx-5 h-full p-0 m-0 rounded-2xl"
+          >
+            <div
+              class="absolute top-0 h-full w-full bg-black bg-opacity-90"
+            ></div>
+            <div
+              class="absolute top-7 -right-96 h-4/6 w-full rounded-l-full bg-gradient-to-tr from-pink-500 via-pink-600 to-pink-700 bg-opacity-90"
+            ></div>
+
+            <div class="absolute top-12 left-2 h-4/6 w-full">
+              <img src="./assets/like.png" alt="h" class="h-20 w-20" />
+            </div>
+
+            <div class="relative flex h-full justify-center items-center">
+              <div
+                class="border-2 p-2 px-20 rounded-full shadow-lg bg-white shadow-white"
+              >
+                <h1 class="text-2xl font-semibold">
+                  Customer
+                  <span
+                    class="handwritten-front text-3xl text-pink-500 font-medium"
+                    >Favorite</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount Card -->
+    <section class="h-full w-auto my-10">
+      <div
+        class="mx-5 lg:mx-28 grid lg:grid-cols-3 sm:grid-cols-3 lg:gap-10 gap-4 my-0"
+      >
+        <div
+          class="relative w-full h-44 flex justify-center items-center rounded-3xl shadow-md"
+          style="
+            background-image: url('./assets/card1.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="text-white text-xl font-semibold">
+            PRODUCT
+            <span class="text-4xl font-thin handwritten-front pr-2">Under</span>
+            95
+          </div>
+        </div>
+        <div
+          class="relative w-full h-44 flex justify-center items-center rounded-3xl shadow-md"
+          style="
+            background-image: url('./assets/card3.png');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="text-white text-xl font-semibold">
+            PRODUCT
+            <span class="text-4xl font-thin handwritten-front pr-2">Under</span>
+            199
+          </div>
+        </div>
+        <div
+          class="relative w-full h-44 flex justify-center items-center rounded-3xl shadow-md"
+          style="
+            background-image: url('./assets/card2.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="text-white text-xl font-semibold">
+            PRODUCT
+            <span class="text-4xl font-thin handwritten-front pr-1">Under</span>
+            499
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Banner -->
+
+    <section class="h-full my-10 mx-5 lg:mx-20">
+      <div
+        class="w-full h-96 rounded-3xl relative flex gap-2 flex-col justify-center items-center"
+        style="
+          background-image: url('./assets/Cover.svg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div>
+          <h2 class="font-bold text-4xl text-white">
+            Clearance <span class="handwritten-front text-5xl">Sales</span>
+          </h2>
+        </div>
+        <div>
+          <h2 class="font-extrabold text-4xl text-white">UP TO 50% OFF</h2>
+        </div>
+        <div>
+          <h2 class="font-normal text-2xl text-white">
+            Big Discount ,Big Saving
+          </h2>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+    <script>
+      const card = document.querySelector(".card");
+
+      const content = card.getAttribute("data-content");
+
+      const cardAfter = card.querySelector(".card:after");
+      cardAfter.textContent = content;
+    </script>
+  </body>
+</html>
